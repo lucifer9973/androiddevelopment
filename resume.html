@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - B.Tech Student</title>
+    <style>
+        body {
+            background-color: lightyellow;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: lightblue;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px;
+        }
+        .photo {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: darkblue;
+        }
+        .upload-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Resume of Shobhit Raj</h1>
+        <p>B.Tech 3rd Year, Computer Science Engineering</p>
+        <p>KIIT University</p>
+    </header>
+
+    <section class="content">
+        <h2>Personal Information</h2>
+        <p><strong>Full Name:</strong> Shobhit Raj</p>
+        <p><strong>University:</strong> KIIT University</p>
+        <p><strong>Course:</strong> B.Tech in Computer Science Engineering (CSE)</p>
+        <p><strong>Year:</strong> 3rd Year</p>
+        <p><strong>Email:</strong> Rajshobhit48@gmail.com</p>
+        <p><strong>Phone:</strong> 9973975403</p>
+
+        <div class="upload-container">
+            <h3>Upload Your Photo</h3>
+            <input type="file" id="photoInput" accept="image/*">
+            <br><br>
+            <img id="photoPreview" class="photo" src="" alt="Your Photo">
+        </div>
+        
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: C, C++, Java, Python</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Database Management: MySQL</li>
+            <li>Software Tools: Git, Visual Studio Code</li>
+        </ul>
+
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1: [Project Title] - A brief description of the project.</li>
+            <li>Project 2: [Project Title] - A brief description of the project.</li>
+        </ul>
+
+        <h2>Hobbies</h2>
+        <p>Reading books, coding, playing chess, exploring new technologies.</p>
+    </section>
+
+    <script>
+        // JavaScript to preview the uploaded photo
+        document.getElementById('photoInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('photoPreview').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Tutorial</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            animation: gradientMove 15s infinite linear alternate;
+            background-size: 400% 400%;
+            overflow-x: hidden;
+        }
+
+        /* Background Animation */
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 10px;
+            background: linear-gradient(to right, #0066cc, #004080);
+            animation: fadeIn 2s ease-in-out;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #33ccff, #ff99cc, #ffcc33);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientText 5s infinite linear alternate;
+        }
+
+        header h3 {
+            font-size: 1.5rem;
+            color: #f0f0f0;
+            margin-top: 10px;
+        }
+
+        @keyframes gradientText {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        /* Navigation Bar */
+        nav {
+            text-align: center;
+            padding: 15px 0;
+            background: rgba(0, 153, 204, 0.8);
+            backdrop-filter: blur(8px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: fadeInDown 2s ease-in-out;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ffcc33;
+            color: black;
+            transform: scale(1.1);
+        }
+
+        /* Container */
+        .container {
+            padding: 30px 20px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        .content-section {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            margin-bottom: 30px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        h2 {
+            border-bottom: 3px solid #33ccff;
+            padding-bottom: 10px;
+            color: #33ccff;
+            font-size: 1.8rem;
+        }
+
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        a {
+            color: #ffcc33;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #33ccff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            font-size: 1.1rem;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+            animation: footerGlow 3s infinite alternate;
+        }
+
+        @keyframes footerGlow {
+            from {
+                box-shadow: 0 -5px 15px rgba(255, 255, 255, 0.2);
+            }
+            to {
+                box-shadow: 0 -5px 20px rgba(255, 255, 255, 0.6);
+            }
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>WELCOME TO MACHINE LEARNING</h1>
+        <h3>PREPARED BY: Shobhit Raj, Roll No: 22053194</h3>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#what-is-ml">What is ML?</a>
+        <a href="#why-ml">Why ML?</a>
+        <a href="#classification">Classification</a>
+        <a href="#examples">Examples</a>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <section id="introduction" class="content-section">
+            <h2>Introduction to Machine Learning</h2>
+            <p>Machine learning is a branch of artificial intelligence that focuses on enabling machines to learn and improve through experience.</p>
+        </section>
+
+        <section id="what-is-ml" class="content-section">
+            <h2>What is Machine Learning?</h2>
+            <p>ML enables systems to identify patterns and make decisions without explicit programming.</p>
+        </section>
+
+        <section id="why-ml" class="content-section">
+            <h2>Why We Need Machine Learning?</h2>
+            <p>Machine learning helps solve complex tasks, automate processes, and analyze large data volumes efficiently.</p>
+        </section>
+
+        <section id="classification" class="content-section">
+            <h2>Classification of Machine Learning</h2>
+            <p>ML is classified into supervised, unsupervised, semi-supervised, and reinforcement learning.</p>
+        </section>
+
+        <section id="examples" class="content-section">
+            <h2>Examples of Machine Learning</h2>
+            <p>Examples include spam filtering, fraud detection, image recognition, and product recommendations.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Shobhit Raj. All Rights Reserved.
+    </footer>
+</body>
+
+</html>
+

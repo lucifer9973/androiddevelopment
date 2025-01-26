@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Repeater</title>
+    <script>
+        function displayGreeting() {
+            const times = prompt("How many times do you want to display 'Hello'?");
+            const body = document.body;
+
+            for (let i = 0; i < times; i++) {
+                const helloElement = document.createElement("p");
+                helloElement.innerText = "Hello";
+                body.appendChild(helloElement);
+            }
+        }
+    </script>
+</head>
+<body onload="displayGreeting()">
+</body>
+</html>

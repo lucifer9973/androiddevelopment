@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/action">
+        Name
+        <input type="text" placeholder="Enter Your Name">
+        <br>
+
+        Roll No.
+        <input type="text" placeholder="Enter Your Roll">
+        <br>
+
+        <h3>BRANCH</h3>
+
+        <div>
+            <input type="radio" name="Branch" id="CSE" value="CSE">
+            <label for="CSE">CSE</label>
+        </div>
+
+        <div>
+            <input type="radio" name="Branch" id="IT" value="IT">
+            <label for="IT">IT</label>
+        </div>
+
+        <div>
+            Choose your Degree:
+            <br>
+            <select name="Degree" id="Degree">
+                <option>Select your option</option>
+                <option value="bt">B.tech</option>
+                <option value="mt">M.tech</option>
+            </select>
+        </div>
+
+        <label for="Address">Please enter your address:</label><br>
+        <textarea id="Address" name="Address" placeholder="Write Your Address here" rows="5" cols="25"></textarea>
+        <br>
+
+        <Button>Submit</Button>
+
+    </form>
+</body>
+</html>

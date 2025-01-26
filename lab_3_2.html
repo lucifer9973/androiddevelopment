@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIIT University</title>
+    <style>
+        .header {
+            text-align: center;
+        }
+        .header img {
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            vertical-align: middle; /* Align with text */
+        }
+        .header h1 {
+            display: inline-block;
+            margin-left: 10px; /* Adjust spacing as needed */
+            color: rgb(98, 226, 109);
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .main-content {
+            width: 80%;
+            padding: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 500px; /* Adjust height as needed */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="kiitlogo.png" alt="KIIT LOGO">
+        <h1>KIIT UNIVERSITY</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="lab_3_4.html" target="content-frame">SCE</a>
+            <a href="form.html" target="content-frame">REGISTRATION</a>
+            <a href="lab_3_1.html" target="content-frame">LOGIN</a>
+            <a href="lab_3_3.html" target="content-frame">CONTACT</a>
+        </div>
+        <div class="main-content">
+            <iframe name="content-frame" src="home.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>
